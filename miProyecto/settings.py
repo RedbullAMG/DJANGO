@@ -85,15 +85,15 @@ WSGI_APPLICATION = 'miProyecto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME':'localhost:1521/orcl',
-        'USER': 'HR',
-        'PASSWORD': 'admin',
+        'NAME':'127.0.0.1:1521/orcl',
+        'USER': 'c##prueba',
+        'PASSWORD': 'prueba',
         'TEST': {
             'USER':'defaul_test',
             'TBLSPACE': 'default_test_tbls',
-            'TBLSPACE': 'default_test_tbls_tmp'
-        }
-    }
+            'TBLSPACE': 'default_test_tbls_tmp',
+        },
+    },
 }
 
 
