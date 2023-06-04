@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'miProyecto.wsgi.application'
 #    }
 #}
 
+import cx_Oracle
+cx_Oracle.init_oracle_client(lib_dir=r"C:\Users\josec\OneDrive\Documentos\Oracle\instantclient_19_19")
 
-DATABASES = {
+
+
+""" DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
         'NAME':'127.0.0.1:1521/orcl',
@@ -93,6 +97,17 @@ DATABASES = {
             'TBLSPACE': 'default_test_tbls',
             'TBLSPACE': 'default_test_tbls_tmp',
         },
+    },
+}
+ """
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME':'k9mjijsf6coqw2oq_high',
+        'USER': 'primerProyecto',
+        'PASSWORD': 'Redchecobu1_',
+        
     },
 }
 
